@@ -1,14 +1,22 @@
 [gd_scene load_steps=3 format=3 uid="uid://tbh3pa0umrm2"]
 
 [ext_resource type="Script" path="res://node_3d.gd" id="1_q7c6m"]
-[ext_resource type="PackedScene" uid="uid://cig3sgp2vurb7" path="res://models/blakedance.fbx" id="1_vchwb"]
+[ext_resource type="PackedScene" uid="uid://cxqdjj7sjcnd8" path="res://models/blakealiendance.fbx" id="2_2h7n6"]
 
 [node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0192928, -0.00885844, -0.0246876)
 script = ExtResource("1_q7c6m")
 
 [node name="XROrigin3D" type="XROrigin3D" parent="."]
 
 [node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
 
-[node name="blakedance" parent="." instance=ExtResource("1_vchwb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+[node name="XRNode3D" type="XRNode3D" parent="XROrigin3D"]
+
+[node name="XRController3D" type="XRController3D" parent="XROrigin3D"]
+
+[node name="blakealiendance" parent="." instance=ExtResource("2_2h7n6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.180115, -2.66295)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 4, -0.867522)

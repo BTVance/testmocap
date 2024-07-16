@@ -24,7 +24,7 @@ var xr_interface: XRInterface
 var text_size = 30
 
 func _ready():
-	custom_font = load("res://fonts/Hyperspace Bold.otf")
+	# custom_font = load("res://fonts/Hyperspace Bold.otf")
 	#DebugDraw2D.config.text_custom_font = custom_font
 	#DebugDraw2D.config.text_default_size = text_size
 	#DebugDraw2D.config.text_background_color = Color.TRANSPARENT
